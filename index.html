@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#102b12">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <meta name="description" content="Treventure - 가족과 함께 떠나는 트레이더스 탐험">
+  <title>Treventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg"></div>
+  <main id="app" aria-label="Treventure 모바일 게임">
+    <section id="stage" class="stage" data-fx="on">
+      <div id="world" class="world">
+        <img id="img-a" class="screen-image" alt="" draggable="false">
+        <img id="img-b" class="screen-image" alt="" draggable="false">
+        <div id="fx" class="fx"></div>
+        <div id="ui" class="ui"></div>
+        <div id="hotspots" class="hotspots"></div>
+        <div id="hud" class="hud" aria-live="polite"><i class="coin">T</i><b id="coin-n">60</b><i class="plus">+</i></div>
+        <div id="hp" class="hpbar"><i></i><span></span></div>
+      </div>
+      <div id="home" class="home">
+        <div class="hscroll">
+          <img class="hs" src="assets/app/head.webp" alt="">
+          <div class="hgreet"><span>트레이더스 <b>회원님</b></span><img src="assets/app/pt.webp" alt="804P"></div>
+          <button class="hbanner" data-go aria-label="트레벤처 시작">
+            <img class="hb-logo" src="assets/app/logo.webp" alt="">
+            <span class="hb-txt">가족과 함께 떠나는<br><b>트레이더스 탐험!</b></span>
+            <span class="hb-cta">지금 시작하기 ▶</span>
+            <img class="hb-c hb-c1" src="assets/characters/boy.webp" alt=""><img class="hb-c hb-c2" src="assets/characters/girl.webp" alt="">
+            <i class="hb-sp s1">✦</i><i class="hb-sp s2">✦</i><i class="hb-sp s3">✦</i>
+            <span class="hb-pg">1/8 <u>❚❚</u> ＋</span>
+          </button>
+          <img class="hs" src="assets/app/club.webp" alt="">
+          <div class="hicons">
+            <button class="ic"><img src="assets/app/ic1.webp" alt="금주의전단"></button>
+            <button class="ic"><img src="assets/app/ic2.webp" alt="오더픽"></button>
+            <button class="ic tv" data-go aria-label="트레벤처"><span class="new">NEW</span><img class="tvl" src="assets/app/logo.webp" alt=""><b>트레벤처</b></button>
+            <button class="ic"><img src="assets/app/ic3.webp" alt="오더투홈"></button>
+            <button class="ic"><img src="assets/app/ic4.webp" alt="와인그랩"></button>
+            <button class="ic"><img src="assets/app/ic5.webp" alt="디지털그랩"></button>
+          </div>
+          <img class="hs" src="assets/app/story.webp" alt="">
+        </div>
+        <div class="hnav"><img src="assets/app/navl.webp" alt=""><button class="pay"><img src="assets/app/pay.webp" alt="이마트페이"></button><img src="assets/app/navr.webp" alt=""></div>
+      </div>
+      <div id="club" class="apage">
+        <div class="cl-head">
+          <button class="cl-ic l1" data-back aria-label="뒤로"><svg viewBox="0 0 24 24"><path d="M21 12H4M11 5l-7 7 7 7"/></svg></button>
+          <button class="cl-ic l2" data-home aria-label="홈"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 3l9 8.5M5.5 10v10.5h5v-6h3v6h5V10"/></svg></button>
+          <b>TRADERS CLUB 안내</b>
+        </div>
+        <div class="cl-scroll">
+          <div class="cl-black"><div class="cl-t">TRADERS</div><div class="cl-row"><span>CLUB</span><i class="bars"></i></div></div>
+          <div class="cl-lime">
+            <h2>트레이더스<br>멤버십</h2>
+            <div class="cards">
+              <div class="card std"><b>TRADERS</b><em>WHOLESALE CLUB</em><u>STANDARD</u></div>
+              <div class="card pre"><b>TRADERS</b><em>WHOLESALE CLUB</em><u>PREMIUM<i></i></u></div>
+            </div>
+          </div>
+          <h3 class="cl-h3">한 눈에 보는 TRADERS CLUB</h3>
+          <div class="cl-tbw"><table class="cl-tb">
+            <thead><tr><th></th><th>스탠다드</th><th>프리미엄</th><th>스탠다드<br>비즈</th><th>프리미엄<br>비즈</th></tr></thead>
+            <tbody>
+              <tr><td>연회비</td><td>3만원</td><td>7만원</td><td>2만 5천원</td><td>7만원</td></tr>
+              <tr><td>TR CASH<br>기본 적립</td><td>1%</td><td>2%</td><td>1%</td><td>2%</td></tr>
+              <tr><td>연간<br>최대 적립한도</td><td>50만원</td><td>100만원</td><td>50만원</td><td>100만원</td></tr>
+              <tr><td>패밀리 회원<br>무료가입</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            </tbody>
+          </table></div>
+          <ul class="cl-notes">
+            <li>※ 회원 가입 후 취소 기한은 가입일로부터 1년입니다.</li>
+            <li>※ TR CASH는 할인, 카드사 할인 등 할인금액을 제외한 부가세 포함 구입금액(상품권 제외)을 기준으로 적립됩니다.</li>
+            <li>※ 트레이더스 T-CAFE, 주유, 전기차 충전, 담배·상품권 등 일부 항목은 TR CASH가 적립되지 않습니다. (신선상품/가공식품/주류 제외)</li>
+          </ul>
+        </div>
+        <button class="cl-join" id="cl-join">TRADERS CLUB 가입하기</button>
+      </div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <div id="loader" class="loader hide"><img class="llogo" src="assets/app/logo.webp" alt="Treventure"><div class="lchars"><img src="assets/characters/boy.webp" alt=""><img src="assets/characters/girl.webp" alt=""></div><div class="track"><div id="bar"></div></div><p id="ltxt">탐험 준비 중...</p></div>
+      <input id="camera-input" type="file" accept="image/*" capture="environment" hidden>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
